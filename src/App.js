@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { makeStyles } from '@material-ui/core/styles';
+import { Box } from '@material-ui/core';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import SearchBar from './components/SearchBar';
+import SectionForecast from './components/SectionForecast';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: 'auto',
+    padding: theme.spacing(2),
+    backgroundColor: theme.palette.background.white,
+    maxWidth: 700,
+    textAlign: 'center',
+  },
+}))
+
+const App = () => {
+    const classes = useStyles();
+    return (
+        <Box className={classes.root}>
+            <SearchBar />
+            <SectionForecast />
+        </Box>
+    )
+};
 
 export default App;
