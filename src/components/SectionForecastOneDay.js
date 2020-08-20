@@ -22,7 +22,7 @@ const SectionForecastOneDay = props => {
     const nightTemp = formatTemperature(dayForecast.temp.night);
     const humidity = dayForecast.humidity;
     const icon = dayForecast.weather[0].icon;
-    const src = `http://openweathermap.org/img/wn/${icon}.png`
+    const src = `https://openweathermap.org/img/wn/${icon}.png`
 
     return (
         <>

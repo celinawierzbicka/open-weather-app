@@ -37,7 +37,7 @@ const CurrentWeather = props => {
     } = props;
 
     const classes = useStyles(props);
-    const src = `http://openweathermap.org/img/wn/${currentWeather.icon}@2x.png`
+    const src = `https://openweathermap.org/img/wn/${currentWeather.icon}@2x.png`
 
     return (
         <Box className={classes.wrapper}>
