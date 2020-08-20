@@ -5,6 +5,7 @@ Weather App with 5 days weather forecast implemented with use of OpemWeatherMap 
 ## Demo
 
 The app is deployed via Netlify (https://www.netlify.com/) and can be accessed here: https://goofy-wiles-53df12.netlify.app/
+* NOTE: api.openweathermap.org free version is not available over HTTPS. To avoid 'Mixed content' error in your browser add netlify to exceptions. For example in Chrome go to Settings/Site Settings/Insecure Content/Allow and type in [*.]netlify.app
 
 ![](demo.gif)
 
