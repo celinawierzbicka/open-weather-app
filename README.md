@@ -4,6 +4,8 @@ Weather App with 5 days weather forecast implemented with use of OpemWeatherMap 
 
 ## Demo
 
+The app is deployed via Netlify (https://www.netlify.com/) and can be accessed here: https://goofy-wiles-53df12.netlify.app/
+
 ![](demo.gif)
 
 
